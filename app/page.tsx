@@ -7,7 +7,7 @@ export default function Home() {
       <Container>
         <div className="relative ov">
           
-          <Image src="./grid.svg" alt="grid" className="absolute -top-[90px] h-full left-0 -z-10 opacity-30" />
+          <Image src="./grid.svg" alt="grid" fill className="absolute -top-[90px] h-full left-0 -z-10 opacity-30" />
           <div className="absolute w-full -top-[70px] h-full left-0 bg-grid-gradient"/>
           
           <Hero />

@@ -29,7 +29,7 @@ export const Hero = () => {
                 <FacebookIcon className="cursor-pointer md:w-8 w-6" />
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-semibold text-gradient">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-semibold text-gradient">
                 React <span className="text-purple">Front-End</span> <br /> Web Developer
             </h1>
 
