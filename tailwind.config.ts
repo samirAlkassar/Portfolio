@@ -25,7 +25,7 @@ export default {
         "lg": "1.125rem", /* 18px */
         "xl": ["1.25rem","1rem"],  /* 20px */
         "2xl": "1.8rem", //28px
-        "3xl": "2.2rem", //32px
+        "3xl": "2.3rem", //32px
         "4xl": ["2.75rem","3.25rem"], //44px
         "5xl": ["3.25rem","4rem"],
         "6xl": ["4.5rem","5rem"], //72px
