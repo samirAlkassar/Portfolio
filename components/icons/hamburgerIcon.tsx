@@ -1,4 +1,4 @@
-export const HamburgerIcon = ({ className, onClick }: { className?: string, onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void }) => {
+export const HamburgerIcon = ({ className, onClick }: { className?: string, onClick?: () => void }) => {
     return (
       <svg
         width="26"
@@ -7,7 +7,7 @@ export const HamburgerIcon = ({ className, onClick }: { className?: string, onCl
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={className}
-        onClick={()=>onClick}
+        onClick={onClick}
       >
         <rect x="1" y="1" width="24" height="24" fill="#4D4D4D" />
         <rect x="0" y="0" width="12" height="12" fill="#4E5356" />
