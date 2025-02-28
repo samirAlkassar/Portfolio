@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  html{
+   @apply bg-background text-white-cold;
+  }
+}
+
+@layer utilities{
+  .text-gradient {
+    background-Image: linear-gradient(#D9E3E9 64%, #767676 93%);
+    background-clip: text;
+    color: transparent;
+  }
+  .social-icons {
+    width: 2rem;
+    cursor: pointer;
+  }
+}
