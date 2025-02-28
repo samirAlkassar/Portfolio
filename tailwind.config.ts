@@ -23,7 +23,7 @@ export default {
         sm: "0.875rem", /* 14px */
         base: "1rem",    /* 16px */
         "lg": "1.125rem", /* 18px */
-        "xl": ["1.25rem","1rem"],  /* 20px */
+        "xl": ["1.25rem","1.75rem"],  /* 20px */
         "2xl": "1.8rem", //28px
         "3xl": "2.3rem", //32px
         "4xl": ["2.75rem","3.25rem"], //44px
