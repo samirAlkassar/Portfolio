@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
          <div>
             <Header />
-            <main className="pt-[var(--navigation-hieght)] bg-page-gradiant">
+            <main>
                 {children}
             </main>
             {/* <Footer /> */}

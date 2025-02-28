@@ -25,11 +25,8 @@ export const Header = () => {
       <div className="w-full max-w-[1000px] relative mx-4 mt-6 px-4">
         {/* Main Navbar */}
         <div className="border backdrop-blur-md border-nav-border w-full p-2 rounded-full bg-white bg-opacity-5 flex justify-between items-center">
-          <h1 className="text-lg md:text-2xl font-semibold italic cursor-pointer ml-4 select-none">
-            Samir
-          </h1>
+          <h1 className="text-lg md:text-1xl font-semibold italic cursor-pointer ml-4 select-none">Samir</h1>
 
-          {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center text-lg text-white-cold">
             {navLinks.map(({ id, name }) => (
               <li key={id} className="hover:text-nav-hover active:scale-95 transition-all duration-200 ease-in">

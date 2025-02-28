@@ -56,8 +56,17 @@ export default {
       backgroundImage: {
         "avatar-gradient": "linear-gradient(#FF0000 0%, #003EDB 14%, #9E26C3 37%, #86F646 47%, #9C1467 58%, #9B0E4A 78%, #230E9B 85%, #990000 100%)",
         "heroTitle-gradient": "linear-gradient(#ffffff 64%, #767676 93%)",
-        "grid-gradient": "radial-gradient(transparent 0%,#0707088d 40%, #070708 70%)"
-      }
+        "grid-gradient": "radial-gradient(transparent 0%,#070708bb 40%, #070708 70%)"
+      },
+      keyframes: {
+        "square-lights": {
+          "0%": { backgroundColor: "red" },
+          "100%": { backgroundColor: "blue" },
+        },
+      },
+      animation: {
+        "square-animation": "square-lights 500ms ease infinite",
+      },      
   },
   plugins: [],
 } satisfies Config;

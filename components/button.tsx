@@ -3,6 +3,9 @@ import Link from "next/link";
 import { cva, VariantProps } from "class-variance-authority";
 import classNames from "classnames";
 
+
+ 
+
 const buttonClasses = cva("rounded-full inline-flex items-center", {
     variants: {
         variant: {
@@ -11,7 +14,7 @@ const buttonClasses = cva("rounded-full inline-flex items-center", {
         },
         size: {
             small: "text-lg px-6 py-1.5",
-            medium: "md:text-lg md:px-6 md:py-3 sm:text-sm sm:px-2 sm:py-2 text-xs px-1.5 py-1",
+            medium: "md:text-lg md:px-5 md:py-2 sm:text-sm sm:px-2 sm:py-2 text-xs px-1.5 py-1",
             large: "text-lg px-6 h-12"
         }
     },
@@ -37,7 +40,9 @@ export const IconContainer = ({ children }: HeroElementProps) => {
 
 export const Button = ({ children, href, variant, size, className }: ButtonProps) => {
     if (href) {
-        return <Link className={classNames(buttonClasses({ variant, size }), className)} href={href}>{children}</Link>;
+        return <Link className={classNames(buttonClasses({ variant, size }), className)} href={href}>
+            {children}
+        </Link>;
     }
     return <button type="button" className={classNames(buttonClasses({ variant, size }), className)}>{children}</button>;
 };
