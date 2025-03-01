@@ -37,15 +37,14 @@ const ProjectPanel = () => {
                 <div className="flex md:flex-row flex-col items-center gap-3 mb-[60px] mt-[40px]">
                     <p className="text-2xl">#{number}</p>
                     <div>
-                        <div className="relative h-[300px] w-[450px] md:w-[949px] md:h-[636px] overflow-hidden rounded-lg cursor-pointer">
-                            <Image src={URL} alt={alte} layout="fill" className="hover:scale-110 hover:-translate-y-6 transition-all duration-500 ease-out"/>
+                        <div className="relative w-full h-full lg:w-[949px] lg:h-[636px] overflow-hidden rounded-lg cursor-pointer">
+                            <Image src={URL} alt={alte} layout="fit" className="hover:scale-110 hover:-translate-y-6 transition-all duration-500 ease-out"/>
                         </div>
                     </div>
                 </div>
                 <Border />
             </div>
             ))}
-            
         </div>
     )
 }
