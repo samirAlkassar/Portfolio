@@ -8,6 +8,7 @@ import { Button } from "../components/button"
 import { RightArrowIcon } from "./icons/right-arrow"
 import { DownloadIcon } from "./icons/download"
 import Link from "next/link"
+import { ChevronDown } from "lucide-react"
 
 const socialMediaLinks = {
     "FACEBOOK": "https://www.facebook.com/samir.elkassr/",
@@ -44,6 +45,7 @@ export const Hero = () => {
                 <Button size="medium" variant="primary">Contact me here <RightArrowIcon className="w-6 mt-1 ml-1" /></Button>
                 <Button size="medium" variant="primary" className="bg-opacity-0 text-white">Download CV <DownloadIcon className="w-6 ml-1" /></Button>
             </div>
+            <ChevronDown className="mt-14"/>
         </section>
     )
 }

@@ -1,10 +1,10 @@
 import Image from "next/image";
-
-export const GridBackground = () => {
+import classNames from "classnames";
+export const GridBackground = ({className, classNameImage, classNameGradient}:{className?:string, classNameImage?: string,classNameGradient?: string}) => {
     return (
-        <div className="absolute w-full h-full max-h-[750px] -mt-[100px] overflow-hidden max-w-[1200px]">
-            <div className="w-full h-full bg-grid-gradient"/>
-            <Image src="./grid.svg" alt="grid" fill className="min-w-[900px] h-full -z-10 opacity-30" />
+        <div className = {classNames("absolute w-full h-full max-h-[750px] -z-10 overflow-hidden max-w-[1200px]",className)}>
+            <div className={classNames("w-full h-full bg-grid-gradient",classNameGradient)}/>
+            <Image src="./grid.svg" alt="grid" fill className={classNames("min-w-[900px] h-full -z-10 opacity-40",classNameImage)}/>
             {/* <span className="absolute w-[6.7%] h-[11%] -z-[5] bg-purple top-[114px] left-[265px] animate-square-animation"/> */}
         </div>
     )

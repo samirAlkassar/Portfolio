@@ -6,7 +6,7 @@ import { Hero } from "@/components/hero";
 export default function Home() {
   return (
     <section className="flex justify-center items-center flex-col">
-      <GridBackground />
+      <GridBackground className="-mt-[60px]"/>
       <Container>
           <Hero />
       </Container>
