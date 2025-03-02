@@ -5,6 +5,7 @@ import { About } from "@/components/about";
 import "./globals.css";
 import { Border } from "@/components/borderLine";
 import { Projects } from "@/components/projects";
+import { Skills } from "@/components/skills";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,8 @@ export default function RootLayout({
             <About />
             <Border />
             <Projects />
+            <Border />
+            <Skills />
             {/* <Footer /> */}
         </div>
       </body>

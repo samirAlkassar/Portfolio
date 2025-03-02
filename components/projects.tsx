@@ -50,7 +50,7 @@ export const Projects = () => {
 const ProjectPanel = () => {
     return (
         <div className="flex flex-col -mt-6">
-            {ProjectsList.map(({id, imageURL, number, alte, title, teachStack})=>(
+            {ProjectsList.map(({id, imageURL, number, alte, title, teachStack},index)=>(
             <div key={id}>
                 <div className="flex md:flex-row flex-col items-end gap-3 md:mb-[40px] md:mt-[40px] mb-[30px] mt-[10px] md:items-start">
                     <p className="lg:text-2xl text-lg">#{number}</p>
@@ -61,21 +61,21 @@ const ProjectPanel = () => {
                         <div className="flex justify-between w-full mt-4 items-start flex-col md:flex-row gap-3">
                             <h3 className="text-left md:text-xl text-md">{title}</h3>
                             <div className="flex gap-2">
-                                <Button variant="secondary" size="extraSmall">View Live ↗</Button>
                                 <Button variant="secondary" size="extraSmall">Source Code ↗</Button>
+                                <Button variant="secondary" size="extraSmall">View Live ↗</Button>
                             </div>
                             
                         </div>
                         <div className="flex flex-wrap mt-4 md:mt-1">
                             {teachStack.map((tech, index)=>(
-                                <span key={index} className="text-xs md:text-sm flex items-center justify-center bg-white bg-opacity-5 border border-white border-opacity-10 text-white-cold px-4 py-1 rounded-full mr-2 mt-2">{tech}</span>
+                                <span key={index} className="text-xs md:text-sm flex items-center justify-center bg-white bg-opacity-5 border border-white border-opacity-10 text-white-cold px-4 py-1 rounded-full mr-2 mt-2 cursor-default">{tech}</span>
                             ))}
                         </div>
                     </div>
                     
                 </div>
                 
-                <Border />
+                {index === ProjectsList.length - 1 ? "": <Border />}
             </div>
             ))}
         </div>

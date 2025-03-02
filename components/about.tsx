@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react"
 import { GridBackground } from "./gridBackground"
+import { Title } from "../components/title"
 
 const aboutMeText: string = `I graduated with computer since degree and speciated at web development, 
             I love coding and engineering websites that both look good and function as
@@ -11,7 +12,7 @@ export const About = () => {
         <section className="text-center mx-4 flex md:mt-[80px] mt-[40px] md:pb-[200px] pb-[100px] items-center flex-col relative overflow-x-clip overflow-y-hidden">
             <GridBackground className="h-[500px] -mt-[60px] rotate-12" classNameGradient=""/>
 
-            <h1 className="text-2xl md:text-4xl font-semibold ">About Me</h1>
+            <Title>About Me</Title>
             <p className="mt-8 text-xs md:text-2xl max-w-[62ch]">
                 {aboutMeText}  
             </p>
