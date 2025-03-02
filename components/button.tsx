@@ -6,15 +6,16 @@ import classNames from "classnames";
 
  
 
-const buttonClasses = cva("rounded-full inline-flex items-center", {
+const buttonClasses = cva("rounded-full inline-flex items-center active:scale-95 transition-all duration-200", {
     variants: {
         variant: {
-            primary: "bg-white-cold text-background",
-            secondary: "text-offWhite bg-textWhite bg-opacity-10 border border-white-a08 backdrop-blur-[12px] hover:bg-opacity-20 transition-colors ease-in",
+            primary: "bg-white-cold text-background max-h-12 overflow-y-hidden hover:[&_p]:translate-y-0 [&_p]:translate-y-0",
+            secondary: "bg-secondaryButtonColor",
         },
         size: {
-            small: "text-lg px-6 py-1.5",
-            medium: "md:text-lg md:px-5 md:py-2 sm:text-sm sm:px-2 sm:py-2 text-xs px-1.5 py-1",
+            extraSmall: "text-xs px-4 py-1 md:text-sm md:px-4 md:py-1.5 hover:bg-white-cold hover:text-background transition-all duration-300 ease-in border border-white border-opacity-10",
+            small: "[&_p]:text-lg [&_p]:px-6 [&_p]:py-1.5 [display:inherit] md:[&_p]:translate-y-[5px] md:hover:[&_p]:-translate-y-[50px] ",
+            medium: "md:[&_p]:text-lg md:[&_p]:px-5 md:[&_p]:py-2 sm:[&_p]:text-sm sm:[&_p]:px-2 sm:[&_p]:py-2 [&_p]:text-xs [&_p]:px-1.5 [&_p]:py-1 md:[&_p]:translate-y-[25px] md:hover:[&_p]:-translate-y-[28px]",
             large: "text-lg px-6 h-12"
         }
     },
@@ -44,5 +45,17 @@ export const Button = ({ children, href, variant, size, className }: ButtonProps
             {children}
         </Link>;
     }
-    return <button type="button" className={classNames(buttonClasses({ variant, size }), className)}>{children}</button>;
+    return <button type="button" className={classNames(buttonClasses({ variant, size }), className)}>
+        {variant === "primary" ?
+        <>
+            <p className="transition-all duration-200 ease-in md:block hidden">
+                <span>{children}</span>
+                <br/>
+                <br/>
+                <span>{children}</span>
+            </p>
+            <p className="md:hidden block translate-y-13">{children}</p>
+        </>:
+        <p>{children}</p>}
+    </button>;
 };
