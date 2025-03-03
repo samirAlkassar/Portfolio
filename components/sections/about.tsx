@@ -6,11 +6,11 @@ import { Section } from "../section"
 const aboutMeText: string = `I graduated with computer since degree and speciated at web development, 
             I love coding and engineering websites that both look good and function as
             expected. I love the problem solving aspect and figuring out a solution to
-            a problem, I’m a competitive person as well who love taking on challenges and improve himself.`
+            a problem, I’m a competitive person as well who love taking on challenges and improve himself.`;
 
 export const About = () => {
     return (
-        <Section>
+        <Section id="About">
             <GridBackground className="h-[500px] -mt-[60px] rotate-12" classNameGradient="" />
 
             <Title>About Me</Title>

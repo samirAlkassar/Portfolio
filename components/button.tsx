@@ -29,6 +29,10 @@ interface ButtonProps extends VariantProps<typeof buttonClasses> {
     children: React.ReactNode;
     href?: string;
     className?: string;
+    onClick?: () => void;
+    buttonhref?: string;
+    type?: "button" | "submit" | "reset";
+    disabled?: boolean;
 }
 
 interface HeroElementProps {
@@ -39,15 +43,15 @@ export const IconContainer = ({ children }: HeroElementProps) => {
     return <span className="bg-white-a08 px-2 rounded-full ml-2 -mr-2 py-[0.3rem]">{children}</span>;
 }
 
-export const Button = ({ children, href, variant, size, className }: ButtonProps) => {
+export const Button = ({ children, href, variant, size, className, onClick,buttonhref, type = "button", disabled }: ButtonProps) => {
     if (href) {
-        return <Link className={classNames(buttonClasses({ variant, size }), className)} href={href} target="_blank" rel="noopener noreferrer">
+        return <Link onClick={onClick} className={classNames(buttonClasses({ variant, size }), className)} href={href} target="_blank" rel="noopener noreferrer">
             {children}
         </Link>;
     }
-    return <button type="button" className={classNames(buttonClasses({ variant, size }), className)}>
+    return <button onClick={onClick} disabled={disabled} type={type} className={classNames(buttonClasses({ variant, size }), className)}>
         {variant === "primary" ?
-        <>
+        <a href={buttonhref}>
             <p className="transition-all duration-200 ease-in md:block hidden">
                 <span>{children}</span>
                 <br/>
@@ -55,7 +59,7 @@ export const Button = ({ children, href, variant, size, className }: ButtonProps
                 <span>{children}</span>
             </p>
             <p className="md:hidden block translate-y-13">{children}</p>
-        </>:
+        </a>:
         <p>{children}</p>}
     </button>;
 };

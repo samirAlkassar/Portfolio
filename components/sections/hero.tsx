@@ -1,3 +1,5 @@
+"use client";
+
 import classNames from "classnames"
 import Image from "next/image"
 import { VerifiedIcon } from "../icons/verified"
@@ -9,6 +11,8 @@ import { Button } from "../button"
 // import { DownloadIcon } from "./icons/download"
 import Link from "next/link"
 import { ChevronDown } from "lucide-react"
+import { Section } from "../section"
+import { usePageContext } from "../context/pageContext";
 
 const socialMediaLinks = {
     "FACEBOOK": "https://www.facebook.com/samir.elkassr/",
@@ -17,8 +21,10 @@ const socialMediaLinks = {
 }
 
 export const Hero = () => {
+    const { handleScroll } = usePageContext();
+
     return (
-        <section className="w-full flex flex-col items-center relative md:mt-[100px] mt-[80px] md:pb-[200px] pb-[100px]">
+        <Section id="Portfolio">
             <div className={classNames("rounded-full md:w-[86px] md:h-[86px] w-[70px] h-[70px] relative md:border-2 border-[2px] border-white",
                 "before:absolute before:top-1.5 before:left-1.5 before:h-[50px] before:w-[50px] before:md:h-[70px] before:md:w-[70px] before:bg-purple before:bg-avatar-gradient before:blur-2xl"
             )}>
@@ -42,14 +48,14 @@ export const Hero = () => {
             </h1>
 
             <div className="bg-primary border-nav-border rounded-full p-2 flex gap-2 mt-4">
-                <Button size="medium" variant="primary">
+                <Button onClick={()=>handleScroll("Contact")} size="medium" variant="primary">
                     Contact me here →
                 </Button>
-                <Button size="medium" variant="primary" className="bg-opacity-0 text-white">
+                <Button buttonhref="./CV/Samir_Resume_React.pdf" size="medium" variant="primary" className="bg-opacity-0 text-white">
                     Download CV
                 </Button>
             </div>
             <ChevronDown className="mt-14" />
-        </section>
+        </Section>
     )
 }

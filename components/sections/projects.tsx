@@ -43,7 +43,7 @@ const ProjectsList: Project[] = [
 
 export const Projects = () => {
     return (
-        <section className="text-center relative my-4 flex md:flex-row flex-col px-4 justify-between max-w-[1400px] mx-auto">
+        <section id="Works" className="text-center relative my-4 flex md:flex-row flex-col px-4 justify-between max-w-[1400px] mx-auto">
             <div>
                 <h1 className="text-2xl mt-2 sticky top-[100px] mr-10">Projects</h1>
             </div>

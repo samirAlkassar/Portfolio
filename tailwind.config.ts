@@ -17,7 +17,8 @@ export default {
         "nav-border": "#2E3032",
         "nav-hover": "#ADB4B8",
         "verification": "#27C586",
-        "secondaryButtonColor": "#292828"
+        "secondaryButtonColor": "#292828",
+        "green-500": "#10B981",
         },
       fontSize: {
         xs: "0.75rem",  /* 12px */

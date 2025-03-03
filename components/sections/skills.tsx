@@ -2,6 +2,7 @@ import { GridBackground } from "../gridBackground"
 import { Title } from "../title"
 import classNames from "classnames"
 import { Section } from "../section"
+import Image from "next/image"
 
 
 const skills = [
@@ -70,7 +71,7 @@ export const Skills = () => {
                         "hover:before:w-full before:rounded-lg before:transition-all before:duration-300 before:ease-in-out",
                         "before:-z-10 before:bg-opacity-30"
                     )}>
-                        <img src={icon} alt="icon" className="p-1 mr-2 w-[35px] md:w-[60px]" />
+                        <Image src={icon} alt="icon" className="p-1 mr-2 w-[35px] md:w-[60px]" />
                         <div className="flex flex-col items-start text-left">
                             <h1 className="text-sm sm:text-lg md:text-xl font-semibold">{name}</h1>
                             <p className="text-xs md:text-base text-white opacity-70">{description}</p>
