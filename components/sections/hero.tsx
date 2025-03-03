@@ -1,10 +1,10 @@
 import classNames from "classnames"
 import Image from "next/image"
-import { VerifiedIcon } from "./icons/verified"
-import { GithubIcon } from "./icons/github"
-import LinkedInIcon from "./icons/linkedin"
-import { FacebookIcon } from "./icons/facebook"
-import { Button } from "../components/button"
+import { VerifiedIcon } from "../icons/verified"
+import { GithubIcon } from "../icons/github"
+import LinkedInIcon from "../icons/linkedin"
+import { FacebookIcon } from "../icons/facebook"
+import { Button } from "../button"
 // import { RightArrowIcon } from "./icons/right-arrow"
 // import { DownloadIcon } from "./icons/download"
 import Link from "next/link"
@@ -49,7 +49,7 @@ export const Hero = () => {
                     Download CV
                 </Button>
             </div>
-            <ChevronDown className="mt-14"/>
+            <ChevronDown className="mt-14" />
         </section>
     )
 }

@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react"
-import { GridBackground } from "./gridBackground"
-import { Title } from "../components/title"
+import { GridBackground } from "../gridBackground"
+import { Title } from "../title"
+import { Section } from "../section"
 
 const aboutMeText: string = `I graduated with computer since degree and speciated at web development, 
             I love coding and engineering websites that both look good and function as
@@ -9,14 +10,14 @@ const aboutMeText: string = `I graduated with computer since degree and speciate
 
 export const About = () => {
     return (
-        <section className="text-center mx-4 flex md:mt-[80px] mt-[40px] md:pb-[200px] pb-[100px] items-center flex-col relative overflow-x-clip overflow-y-hidden">
-            <GridBackground className="h-[500px] -mt-[60px] rotate-12" classNameGradient=""/>
+        <Section>
+            <GridBackground className="h-[500px] -mt-[60px] rotate-12" classNameGradient="" />
 
             <Title>About Me</Title>
             <p className="mt-8 text-xs md:text-2xl max-w-[62ch]">
-                {aboutMeText}  
+                {aboutMeText}
             </p>
-            <ChevronDown className="mt-14"/>
-        </section>
+            <ChevronDown className="mt-14" />
+        </Section>
     )
 }

@@ -1,5 +1,8 @@
-import { GridBackground } from "./gridBackground"
-import { Title } from "./title"
+import { GridBackground } from "../gridBackground"
+import { Title } from "../title"
+import classNames from "classnames"
+import { Section } from "../section"
+
 
 const skills = [
     {
@@ -56,21 +59,27 @@ const skills = [
 
 export const Skills = () => {
     return (
-        <section className="text-center mx-4 flex md:mt-[80px] mt-[40px] md:pb-[200px] pb-[100px] items-center flex-col relative overflow-x-clip">
-            <GridBackground className="-rotate-[30deg] h-[600px] -mt-[100px]"/>
+        <Section>
+            <GridBackground className="-rotate-[30deg] h-[600px] -mt-[100px]" />
             <Title>My Skills</Title>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-8">
-                {skills.map(({name, description, icon})=>(
-                    <div key={name} className="bg-white bg-opacity-15 border items-start border-white border-opacity-30 flex p-2 rounded-lg">
+                {skills.map(({ name, description, icon }) => (
+
+                    <div key={name} className={classNames("bg-white relative cursor-pointer bg-opacity-20 border items-start border-white border-opacity-30 flex p-2 rounded-lg",
+                        "before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-white-cold",
+                        "hover:before:w-full before:rounded-lg before:transition-all before:duration-300 before:ease-in-out",
+                        "before:-z-10 before:bg-opacity-30"
+                    )}>
                         <img src={icon} alt="icon" className="p-1 mr-2 w-[35px] md:w-[60px]" />
                         <div className="flex flex-col items-start text-left">
-                            <h1 className="text-sm sm:text-lg md:text-xl">{name}</h1>
+                            <h1 className="text-sm sm:text-lg md:text-xl font-semibold">{name}</h1>
                             <p className="text-xs md:text-base text-white opacity-70">{description}</p>
                         </div>
                     </div>
+
                 ))}
             </div>
-        </section>
+        </Section>
     )
 }
 

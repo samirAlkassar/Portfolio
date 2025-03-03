@@ -41,7 +41,7 @@ export const IconContainer = ({ children }: HeroElementProps) => {
 
 export const Button = ({ children, href, variant, size, className }: ButtonProps) => {
     if (href) {
-        return <Link className={classNames(buttonClasses({ variant, size }), className)} href={href}>
+        return <Link className={classNames(buttonClasses({ variant, size }), className)} href={href} target="_blank" rel="noopener noreferrer">
             {children}
         </Link>;
     }
