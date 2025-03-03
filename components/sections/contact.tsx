@@ -16,14 +16,14 @@ export const Contact = () => {
             Please contact me directly at <a target="_blank" rel="noopener noreferrer"  href="mailto:samir.alkcar@gmail.com" className="text-bold italic underline">samir.alkcar@gmail.com </a>or through this form.
             </p>
             <form onSubmit={handleSubmit} className="mt-6 flex flex-col w-full mx-auto max-w-[800px] py-10 rounded-xl items-start gap-4 bg-white-cold bg-opacity-[0.03]">
-                <input type="text" id="name" placeholder="Name" className="input-field sm:w-[70%] w-[90%]" />
+                <input type="text" id="name" name="name" placeholder="Name" className="input-field sm:w-[70%] w-[90%]" />
                 <input id="email" type="email" name="email" placeholder="Email" className="input-field sm:w-[70%] w-[90%]" />
                 <ValidationError 
                     prefix="Email" 
                     field="email"
                     errors={state.errors}
                 />
-                <textarea placeholder="Message" className="input-field sm:w-[70%] w-[90%] h-[150px]" />
+                <textarea name="message" placeholder="Message" className="input-field sm:w-[70%] w-[90%] h-[150px]" />
                 <ValidationError 
                     prefix="Message" 
                     field="message"
