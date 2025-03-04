@@ -36,7 +36,7 @@ export const Hero = () => {
                 <VerifiedIcon className="text-verification w-7 h-7 absolute bottom-0 -right-2 z-10" />
             </div>
 
-            <p className="text-lg mt-4">{"Hi, I'm Samir"}</p>
+            <p className="text-lg mt-4">{"Hi 👋, I'm Samir"}</p>
             <div className="flex mt-2 gap-3">
                 <Link title="Github" href={socialMediaLinks["GITHUB"]} target="_blank"><GithubIcon className="cursor-pointer md:w-8 w-6" /></Link>
                 <Link title="Linkedin" href={socialMediaLinks["LINKEDIN"]} target="_blank"><LinkedInIcon className="cursor-pointer md:w-8 w-6" /></Link>

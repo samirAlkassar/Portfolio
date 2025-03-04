@@ -27,7 +27,7 @@ export default {
         "lg": "1.125rem", /* 18px */
         "xl": ["1.25rem","1.75rem"],  /* 20px */
         "2xl": "1.5rem", //28px
-        "3xl": "2.3rem", //32px
+        "3xl": "2.2rem", //32px
         "4xl": ["2.75rem","3.25rem"], //44px
         "5xl": ["3.25rem","4rem"],
         "6xl": ["4.5rem","5rem"], //72px
@@ -57,7 +57,7 @@ export default {
       },
       backgroundImage: {
         "avatar-gradient": "linear-gradient(#FF0000 0%, #003EDB 14%, #9E26C3 37%, #86F646 47%, #9C1467 58%, #9B0E4A 78%, #230E9B 85%, #990000 100%)",
-        "heroTitle-gradient": "linear-gradient(#ffffff 64%, #767676 93%)",
+        "heroTitle-gradient": "linear-gradient(#ffffff 64%, #767676af 93%)",
         "grid-gradient": "radial-gradient(transparent 0%,#070708bb 40%, #070708 70%)"
       },
       keyframes: {
