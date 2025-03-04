@@ -7,8 +7,6 @@ import { GithubIcon } from "../icons/github"
 import LinkedInIcon from "../icons/linkedin"
 import { FacebookIcon } from "../icons/facebook"
 import { Button } from "../button"
-// import { RightArrowIcon } from "./icons/right-arrow"
-// import { DownloadIcon } from "./icons/download"
 import Link from "next/link"
 import { ChevronDown } from "lucide-react"
 import { Section } from "../section"
@@ -44,14 +42,14 @@ export const Hero = () => {
             </div>
 
             <h1 className="text-3xl sm:text-5xl md:text-7xl mt-4 font-semibold text-gradient">
-                React <span className="text-verification">Front-End</span> <br /> Web Developer
+                React <span className="text-purple">Front-End</span> <br /> Web Developer
             </h1>
 
             <div className="bg-primary border-nav-border rounded-full p-2 flex gap-2 mt-4">
                 <Button onClick={()=>handleScroll("Contact")} size="medium" variant="primary">
                     Contact me here →
                 </Button>
-                <Button buttonhref="./CV/Samir_Resume_React.pdf" size="medium" variant="primary" className="bg-opacity-0 text-white">
+                <Button buttonhref="./CV/Samir_Resume.pdf" size="medium" variant="primary" className="bg-opacity-0 text-white">
                     Download CV
                 </Button>
             </div>
