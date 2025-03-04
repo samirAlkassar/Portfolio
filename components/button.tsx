@@ -15,7 +15,7 @@ const buttonClasses = cva("rounded-full inline-flex items-center active:scale-95
         size: {
             extraSmall: "text-xs px-4 py-1 md:text-sm md:px-4 md:py-1.5 hover:bg-white-cold hover:text-background transition-all duration-300 ease-in border border-white border-opacity-10",
             small: "[&_p]:text-lg [&_p]:px-6 [&_p]:py-1.5 [display:inherit] md:[&_p]:translate-y-[5px] md:hover:[&_p]:-translate-y-[50px] ",
-            medium: "md:[&_p]:text-lg md:[&_p]:px-5 md:[&_p]:py-2 sm:[&_p]:text-sm sm:[&_p]:px-2 sm:[&_p]:py-2 [&_p]:text-xs [&_p]:px-1.5 [&_p]:py-1 md:[&_p]:translate-y-[25px] md:hover:[&_p]:-translate-y-[28px]",
+            medium: "md:[&_p]:text-lg md:[&_p]:px-5 md:[&_p]:py-2 sm:[&_p]:text-sm sm:[&_p]:px-2 sm:[&_p]:py-2 [&_p]:text-sm [&_p]:px-1.5 [&_p]:py-2 md:[&_p]:translate-y-[25px] md:hover:[&_p]:-translate-y-[28px]",
             large: "text-lg px-6 h-12"
         }
     },
