@@ -2,6 +2,7 @@
 import Project_1 from "@/public/project_1.jpeg"
 import Project_2 from "@/public/project_2.jpeg"
 import Project_3 from "@/public/project_3.jpeg"
+import Project_4 from "@/public/quizgame.png"
 import { Border } from "../borderLine";
 import { Button } from "../button";
 
@@ -11,7 +12,8 @@ type Project = {
     imageURL: StaticImageData,
     title: string,
     codeURL: string,
-    teachStack: string[]
+    teachStack: string[],
+    liveURL?: string
 }
 
 const ProjectsList: Project[] = [
@@ -20,6 +22,7 @@ const ProjectsList: Project[] = [
         number: 1,
         imageURL: Project_1,
         codeURL: "https://github.com/samirAlkassar/Bookshop-e-commerce.git",
+        liveURL: "#",
         title: "Ezz El-Dean Bookshop web application (e-commerce) ",
         teachStack: ["React", "vite", "JavaScript", "CSS", "context API", "vercel", "Framer Motion"]
     },
@@ -28,6 +31,7 @@ const ProjectsList: Project[] = [
         number: 2,
         imageURL: Project_2,
         codeURL: "https://github.com/samirAlkassar/Linear-clone.git",
+        liveURL: "#",
         title: "Linear website (clone)",
         teachStack: ["React", "Next.js", "Typescript", "Tailwind", "Vercel"]
     },
@@ -36,8 +40,18 @@ const ProjectsList: Project[] = [
         number: 3,
         imageURL: Project_3,
         codeURL: "https://github.com/samirAlkassar/Reflect-clone.git",
+        liveURL: "#",
         title: "Reflect website (clone)",
         teachStack: ["React", "Next.js", "TailwindCSS", "TypeScript", "Vercel"]
+    },
+    {
+        id: "project4",
+        number: 4,
+        imageURL: Project_4,
+        codeURL: "https://github.com/samirAlkassar/react-practice.git",
+        liveURL: "https://react-practice-liard-nine.vercel.app/",
+        title: "Quize Game web application",
+        teachStack: ["React", "Vite", "TailwindCSS", "TypeScript", "Vercel"]
     },
 ]
 
@@ -59,19 +73,19 @@ export const Projects = () => {
 const ProjectPanel = () => {
     return (
         <div className="flex flex-col -mt-6">
-            {ProjectsList.map(({ id, imageURL, number, title, teachStack, codeURL }, index) => (
+            {ProjectsList.map(({ id, imageURL, number, title, teachStack, codeURL, liveURL }, index) => (
                 <div key={id}>
                     <div className="flex md:flex-row flex-col items-end gap-3 md:mb-[40px] md:mt-[40px] mb-[30px] mt-[10px] md:items-start">
                         <p className="lg:text-2xl text-lg">#{number}</p>
                         <div className="flex flex-col items-start">
                             <div className="relative w-full h-full lg:w-[949px] lg:h-[636px] overflow-hidden rounded-lg cursor-pointer">
-                                <Image src={imageURL} alt={title} layout="fit" className="hover:scale-110 hover:-translate-y-6 transition-all duration-500 ease-out" />
+                                <Image src={imageURL} alt={title} layout="cover" className="hover:scale-110 hover:-translate-y-6 transition-all duration-500 ease-out" />
                             </div>
                             <div className="flex justify-between w-full mt-4 items-start flex-col md:flex-row gap-3">
                                 <h3 className="text-left md:text-xl text-md">{title}</h3>
                                 <div className="flex gap-2">
                                     <Button href={codeURL} variant="secondary" size="extraSmall">Source Code ↗</Button>
-                                    <Button variant="secondary" size="extraSmall">View Live ↗</Button>
+                                    <Button href={liveURL} variant="secondary" size="extraSmall">View Live ↗</Button>
                                 </div>
 
                             </div>
