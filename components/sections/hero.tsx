@@ -44,7 +44,7 @@ export const Hero = () => {
             </div>
 
             <h1 className="text-3xl sm:text-5xl md:text-7xl mt-4 font-semibold text-gradient">
-                React <span className="text-purple">Front-End</span> <br /> Web Developer
+                React <span className="text-verification">Front-End</span> <br /> Web Developer
             </h1>
 
             <div className="bg-primary border-nav-border rounded-full p-2 flex gap-2 mt-4">
