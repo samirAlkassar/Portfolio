@@ -33,7 +33,7 @@ export const Hero = () => {
                     objectFit="fill"
                     alt="samir photo"
                     className="rounded-full" />
-                <VerifiedIcon className="text-verification w-7 h-7 absolute bottom-0 -right-2 z-10" />
+                <VerifiedIcon className="text-verification w-5 h-5 md:w-7 md:h-7 absolute bottom-0 -right-1 md:-right-2 z-10" />
             </div>
 
             <p className="text-lg mt-4">{"Hi 👋, I'm Samir"}</p>
