@@ -9,7 +9,7 @@ export default {
   theme: {
       colors: {
         transparent: "transparent",
-        background: "#121219", //nav-bar 6% opacity
+        background: "#121215", //nav-bar 6% opacity
         primary: "#2A2A2A", //contact and download cv background
         "white-cold": "#D9E3E9",
         "white": "#fff",
@@ -58,7 +58,7 @@ export default {
       backgroundImage: {
         "avatar-gradient": "linear-gradient(#FF0000 0%, #003EDB 14%, #9E26C3 37%, #86F646 47%, #9C1467 58%, #9B0E4A 78%, #230E9B 85%, #990000 100%)",
         "heroTitle-gradient": "linear-gradient(#ffffff 64%, #767676af 93%)",
-        "grid-gradient": "radial-gradient(transparent 0%,#121219bb 40%, #121219 70%)"
+        "grid-gradient": "radial-gradient(transparent 0%,#121215bb 40%, #121215 70%)"
       },
       keyframes: {
         "square-lights": {
