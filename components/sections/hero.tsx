@@ -40,7 +40,6 @@ export const Hero = () => {
                 <Link title="Linkedin" href={socialMediaLinks["LINKEDIN"]} target="_blank"><LinkedInIcon className="cursor-pointer md:w-8 w-6" /></Link>
                 <Link title="Facebook" href={socialMediaLinks["FACEBOOK"]} target="_blank"><FacebookIcon className="cursor-pointer md:w-8 w-6" /></Link>
             </div>
-
             <h1 className="text-3xl sm:text-5xl md:text-7xl mt-4 font-semibold text-gradient">
                 React <span className="text-verification">Front-End</span> <br /> Web Developer
             </h1>
