@@ -32,7 +32,7 @@ const ProjectsList: Project[] = [
         number: 1,
         imageURL: Project_1,
         codeURL: "https://github.com/samirAlkassar/Bookshop-e-commerce.git",
-        liveURL: "#",
+        liveURL: "https://bookshop-e-commerce.vercel.app/",
         title: "Ezz El-Dean Bookshop web application (e-commerce) ",
         teachStack: ["React", "vite", "JavaScript", "CSS", "context API", "vercel", "Framer Motion"]
     },
