@@ -1,6 +1,5 @@
 ; import Image, { StaticImageData } from "next/image";
 import Project_1 from "@/public/project_1.jpeg"
-import Project_2 from "@/public/project_2.jpeg"
 import Project_3 from "@/public/project_3.jpeg"
 import Project_5 from "@/public/zenk-app.png"
 import Project_4 from "@/public/quizgame.png"
