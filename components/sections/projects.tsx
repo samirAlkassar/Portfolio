@@ -4,6 +4,7 @@ import Project_2 from "@/public/project_2.jpeg"
 import Project_3 from "@/public/project_3.jpeg"
 import Project_5 from "@/public/zenk-app.png"
 import Project_4 from "@/public/quizgame.png"
+import Project_6 from "@/public/mawja.jpeg"
 import { Border } from "../borderLine";
 import { Button } from "../button";
 
@@ -19,16 +20,16 @@ type Project = {
 //samir
 const ProjectsList: Project[] = [
     {
-        id: "project4",
+        id: "project1",
         number: 4,
-        imageURL: Project_5,
-        codeURL: "https://github.com/samirAlkassar/zink",
-        liveURL: "https://zink-liart.vercel.app/",
-        title: "ZenK (task management web application)",
-        teachStack: ["React", "Next.js", "TailwindCSS", "TypeScript", "Vercel", "shadcn/ui", "firebase"]
+        imageURL: Project_6,
+        codeURL: "https://github.com/samirAlkassar/social-app",
+        liveURL: "https://mawja.vercel.app/",
+        title: "Mawja (social media platform)",
+        teachStack: ["Next.js", "Node.js", "Express" , "mongoDB" ,"TailwindCSS", "Cloudinary"]
     },
     {
-        id: "project1",
+        id: "project3",
         number: 1,
         imageURL: Project_1,
         codeURL: "https://github.com/samirAlkassar/Bookshop-e-commerce.git",
@@ -36,8 +37,18 @@ const ProjectsList: Project[] = [
         title: "Ezz El-Dean Bookshop web application (e-commerce) ",
         teachStack: ["React", "vite", "JavaScript", "CSS", "context API", "vercel", "Framer Motion"]
     },
+    {
+        id: "project2",
+        number: 4,
+        imageURL: Project_5,
+        codeURL: "https://github.com/samirAlkassar/zink",
+        liveURL: "https://zink-liart.vercel.app/",
+        title: "ZenK (task management web application)",
+        teachStack: ["React", "Next.js", "TailwindCSS", "TypeScript", "Vercel", "shadcn/ui", "firebase"]
+    },
+
         {
-        id: "project3",
+        id: "project4",
         number: 3,
         imageURL: Project_3,
         codeURL: "https://github.com/samirAlkassar/Reflect-clone.git",
@@ -46,17 +57,7 @@ const ProjectsList: Project[] = [
         teachStack: ["React", "Next.js", "TailwindCSS", "TypeScript", "Vercel"]
     },
     {
-        id: "project2",
-        number: 2,
-        imageURL: Project_2,
-        codeURL: "https://github.com/samirAlkassar/Linear-clone.git",
-        liveURL: "#",
-        title: "Linear website (clone)",
-        teachStack: ["React", "Next.js", "Typescript", "Tailwind", "Vercel"]
-    },
-
-    {
-        id: "project5",
+        id: "project6",
         number: 5,
         imageURL: Project_4,
         codeURL: "https://github.com/samirAlkassar/react-practice.git",

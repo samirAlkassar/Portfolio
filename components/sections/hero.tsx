@@ -48,7 +48,7 @@ export const Hero = () => {
                 <Button onClick={()=>handleScroll("Contact")} size="medium" variant="primary">
                     Contact me here →
                 </Button>
-                <Button buttonhref="./CV/Samir_Resume.pdf" size="medium" variant="primary" className="bg-opacity-0 text-white">
+                <Button buttonhref="./CV/Samir_Resume_2025.pdf" size="medium" variant="primary" className="bg-opacity-0 text-white">
                     Download CV
                 </Button>
             </div>
