@@ -16,7 +16,7 @@ type Project = {
     teachStack: string[],
     liveURL?: string
 }
-
+//samir
 const ProjectsList: Project[] = [
     {
         id: "project4",
